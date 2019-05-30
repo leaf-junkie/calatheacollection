@@ -46,11 +46,6 @@ class App extends Component {
         <div style={footer}>
           <p>Calathea Collection | Copyright 2019</p>
         </div>
-        {/* <div className='waves'>          
-          <svg viewBox='0 0 400 400' strokeLinecap='round' style={{display:'inline-block', position:'absolute', bottom:'-1900px', left:0}}>
-            <path d='M0,100 Q 25,25 50,100 75,25 100,100 125,25 150,100 175,25 200,100 225,25 250,100 275,25 300,100 325,25 350,100 375,25 400,100' stroke='none' fill='#1E3B3D'/>
-          </svg>
-        </div> */}
       </div>
     );
   }
