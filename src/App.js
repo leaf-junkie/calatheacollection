@@ -3,32 +3,34 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav'
 import headshot from './headshot.jpg';
 import Scene from './scene.png';
 
 const circle = {
   width:850,
   height:850,
-  position:'fixed',
-  top:'28vh',
-  left:'35vw',
+  position:'relative',
+  // top:'32vh',
+  // left:'35vw',
+  margin:'0 auto',
+  marginTop:'-300px',
   borderRadius:'50%',
   backgroundColor:'pink',
-  opacity:'0.25',
+  opacity:'0.4',
   zIndex:'0'
 }
 
 const pic = {
   position:'relative',
-  top: '18vh',
-  margin:'0 auto',  // border: '4px solid #fff',
-  // borderTopRightRadius:'50%',
-  // borderBottomRightRadius:'50%',
+  top:450,
+  left:-50,
+  margin:'0 auto',
   zIndex:'5'
 }
 
 const footer = {
-  position: 'relative',
+  position:'fixed',
   bottom:0,
   width:'100%',
   height:100,
@@ -39,12 +41,22 @@ const footer = {
 
 function App() {
   return (
-    <div className="App" style={{ overflowY:'hidden' }}>
+    <div className="App">
       <Jumbotron fluid style={{backgroundColor:'#89C5CC', position:'fixed', width:'100%'}}>
           <h1 style={{fontSize:125, color:'#fff'}}>Calathea Collection</h1>
           <h1 style={{color:'#fff'}}>plant-inspired art</h1>
+          <Nav className="justify-content-center" activeKey="/home">
+            <Nav.Item>
+              <Nav.Link href="/about">About</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="https://www.etsy.com/shop/CalatheaCollection" target="_blank">Shop</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/gallery">Gallery</Nav.Link>
+            </Nav.Item>
+          </Nav>
       </Jumbotron>
-      <br></br>
       <Container>
         <div>
           <img src={Scene} style={pic} ></img>
