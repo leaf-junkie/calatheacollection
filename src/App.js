@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import headshot from './headshot.jpg';
-import Shop from './Pages/Shop';
 import Scene from './scene.png';
 
 const circle = {
@@ -16,17 +16,6 @@ const circle = {
   backgroundColor:'pink',
   opacity:'0.25',
   zIndex:'0'
-}
-
-const about = {
-  width:600, 
-  position:'relative', 
-  // top:'25vh', 
-  // right:'50vw', 
-  fontFamily:'sans-serif',
-  color:'#222',
-  textAlign:'justify', 
-  zIndex:'10'
 }
 
 const pic = {
@@ -63,23 +52,6 @@ function App() {
       </Container>
       <Container>
         <div className='circle' style={circle}></div>
-        <div className='About' style={about}>
-          <h2>Hi, nice to meet you!</h2>
-          <br></br>
-          <h4 style={{lineHeight:'150%'}}>
-            And thanks for checking out my site. I'm Julie Ragsdale, 
-            an artist and maker located in Durham, NC. My small handmade 
-            cement planters have proven to be the cornerstone of my 
-            business, but I create a variety of plant-related 
-            goods, from macrame plant hangers to watercolor paintings! 
-            Everything that I sell is either designed or completely 
-            handmade by me. Guess what? Even my website was made by 
-            me. Yep, you guessed it — I'm a web developer, too! Click 
-            Shop to browse my goods, Gallery to view some of my work, 
-            or Contact to reach out to me about custom orders or to 
-            discuss your new website!
-          </h4>
-        </div>
       </Container>
       <div style={footer}>
         <p>Calathea Collection | Copyright 2019</p>
