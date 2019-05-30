@@ -28,13 +28,13 @@ class App extends Component {
             <br></br>
             <Nav className="justify-content-center" activeKey="/home">
               <Nav.Item>
-                <Nav.Link href="/about" style={navlink}>About</Nav.Link>
+                <Nav.Link className='navigation' href="/about" style={navlink}>About</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="https://www.etsy.com/shop/CalatheaCollection" target="_blank" style={navlink}>Shop</Nav.Link>
+                <Nav.Link className='navigation' href="https://www.etsy.com/shop/CalatheaCollection" target="_blank" style={navlink}>Shop</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/gallery" style={navlink}>Gallery</Nav.Link>
+                <Nav.Link className='navigation' href="/gallery" style={navlink}>Gallery</Nav.Link>
               </Nav.Item>
             </Nav>
         </Jumbotron>
