@@ -20,7 +20,7 @@ import thirteen from '../photo_2019-05-30_15-31-25.jpg';
 class Gallery extends Component {
     render() {
         return (
-            <Container style={{position:'relative', top:400, marginBottom:110, zIndex:'-5'}}>
+            <Container style={{position:'relative', top:370, marginBottom:110, zIndex:'-5'}}>
                 <CardGroup>
                     <Card>
                         <Card.Img variant="top" src={two} />

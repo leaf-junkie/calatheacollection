@@ -7,7 +7,7 @@ const circle = {
     height:750,
     position:'relative',
     margin:'0 auto',
-    marginTop:'-415px',
+    marginTop:'-460px',
     borderRadius:'50%',
     backgroundColor:'pink',
     opacity:'0.4',
@@ -16,7 +16,7 @@ const circle = {
   
 const pic = {
     position:'relative',
-    top:350,
+    top:320,
     left:-50,
     margin:'0 auto',
     zIndex:'5'

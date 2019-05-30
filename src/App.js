@@ -23,8 +23,8 @@ class App extends Component {
     return (
       <div className="App">
         <Jumbotron fluid style={{backgroundColor:'#89C5CC', position:'fixed', width:'100%'}}>
-            <h1 style={{fontSize:100, color:'#fff'}}><a style={{color:'#fff', textDecoration:'none'}} href='/home'>Calathea Collection</a></h1>
-            <h1 style={{color:'#fff'}}>plant-inspired art</h1>
+            <h1 style={{fontSize:80, color:'#fff'}}><a style={{color:'#fff', textDecoration:'none'}} href='/home'>Calathea Collection</a></h1>
+            <h2 style={{color:'#fff'}}>plant-inspired art</h2>
             <br></br>
             <Nav className="justify-content-center" activeKey="/home">
               <Nav.Item>

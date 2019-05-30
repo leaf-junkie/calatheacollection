@@ -17,7 +17,7 @@ const circle1 = {
     height:700,
     position:'relative',
     left:0,
-    top:0,
+    top:-80,
     borderRadius:'50%',
     backgroundColor:'#C1DEE2',
     opacity:'0.4',
@@ -40,7 +40,7 @@ const pic = {
     position:'absolute',
     width:450,
     borderRadius:'50%',
-    top:720,
+    top:680,
     left:1100,
     border:'4px solid #fff',
 }
