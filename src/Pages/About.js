@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Julie from '../julie.jpg'
   
 const about = {
-    width:650, 
+    width:600, 
     position:'relative', 
     top:450,
     fontFamily:'sans-serif',
@@ -16,32 +16,33 @@ const circle1 = {
     width:700,
     height:700,
     position:'relative',
-    left:-50,
-    top:110,
+    left:0,
+    top:0,
     borderRadius:'50%',
     backgroundColor:'#C1DEE2',
     opacity:'0.4',
     zIndex:'0'
 }
 
-const circle2 = {
-    width:500,
-    height:500,
-    position:'absolute',
-    left:1000,
-    top:400,
-    borderRadius:'50%',
-    backgroundColor:'#fadadd',
-    border:'4px solid #fff',
-    zIndex:'0'
-}
+// const circle2 = {
+//     width:500,
+//     height:500,
+//     position:'absolute',
+//     left:1000,
+//     top:400,
+//     borderRadius:'50%',
+//     backgroundColor:'#fadadd',
+//     border:'4px solid #fff',
+//     zIndex:'0'
+// }
 
 const pic = {
     position:'absolute',
     width:450,
     borderRadius:'50%',
     top:720,
-    left:1100
+    left:1100,
+    border:'4px solid #fff',
 }
 
 class About extends Component {
@@ -72,7 +73,7 @@ class About extends Component {
                         </span>
                     </div>
                     <div className='circle1' style={circle1}></div>
-                    <div className='circle2' style={circle2}></div>
+                    {/* <div className='circle2' style={circle2}></div> */}
                     <img src={Julie} style={pic} />
                     {/* <div className='waves'>          
                         <svg viewBox='0 0 400 400' strokeLinecap='round' style={{display:'inline-block', position:'absolute', top:'50%', left:0, overflow:'hidden', zIndex:'-5'}}>
