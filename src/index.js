@@ -2,7 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import About from './Pages/About';
+import Gallery from './Pages/Gallery';
 import * as serviceWorker from './serviceWorker';
+
+const routing = (
+    <Router>
+        <div>
+            <Route exact path='/about' component={About} />
+            <Route exact path='/gallery' component={Gallery} />
+            <Route exact path='/' component={App} />
+        </div>
+    </Router>
+)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -39,21 +39,27 @@ const footer = {
   paddingTop:35
 }
 
+const navlink = {
+  color:'#fff',
+  fontSize:24
+}
+
 function App() {
   return (
     <div className="App">
       <Jumbotron fluid style={{backgroundColor:'#89C5CC', position:'fixed', width:'100%'}}>
           <h1 style={{fontSize:125, color:'#fff'}}>Calathea Collection</h1>
           <h1 style={{color:'#fff'}}>plant-inspired art</h1>
+          <br></br>
           <Nav className="justify-content-center" activeKey="/home">
             <Nav.Item>
-              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/about" style={navlink}>About</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="https://www.etsy.com/shop/CalatheaCollection" target="_blank">Shop</Nav.Link>
+              <Nav.Link href="https://www.etsy.com/shop/CalatheaCollection" target="_blank" style={navlink}>Shop</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/gallery">Gallery</Nav.Link>
+              <Nav.Link href="/gallery" style={navlink}>Gallery</Nav.Link>
             </Nav.Item>
           </Nav>
       </Jumbotron>
